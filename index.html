@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pastelería Motta</title>
+  <link rel="icon" href="img/icon.png" type="image/png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(135deg, #fff6e6 0%, #ffe3ec 100%);
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: #ffb6b9;
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(255,182,185,0.15);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    #frases {
+      font-size: 1.1rem;
+      margin: 0.5rem 0 1.5rem 0;
+      color: #fff8f0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #f67280;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section h2 {
+      text-align: center;
+      color: #f67280;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .producto {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 18px rgba(246,114,128,0.08);
+      padding: 1.5rem;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .producto:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(246,114,128,0.18);
+    }
+    .producto img {
+      border-radius: 12px;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px rgba(255,182,185,0.12);
+    }
+    .producto h3 {
+      color: #f67280;
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+    }
+    .producto p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+    footer {
+      background: #ffb6b9;
+      color: #fff;
+      text-align: center;
+      padding: 1.2rem 0 0.7rem 0;
+      margin-top: 2rem;
+      font-size: 1rem;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+    }
+    footer span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #fff8f0;
+    }
+    @media (max-width: 900px) {
+      .productos {
+        flex-direction: column;
+        align-items: center;
+      }
+      .producto {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pastelería Motta</h1>
+    <p id="frases">¡Bienvenido a la mejor pastelería! Aquí encontrarás una variedad de deliciosos pasteles y postres.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="personal.html">Personal</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Nuestros Productos</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="img/Chocolate.jpg" alt="Pastel de Chocolate">
+          <h3>Pastel de Chocolate</h3>
+          <p>Delicioso pastel de chocolate con relleno de crema de avellanas.</p>
+          <p>Precio: S/ 45.00</p>
+        </div>
+        <div class="producto">
+          <img src="img/Tartaleta-de-Frutas.jpg" alt="Tartaleta de Frutas">
+          <h3>Tartaleta de Frutas</h3>
+          <p>Fresca tartaleta con una variedad de frutas de temporada.</p>
+          <p>Precio: S/ 35.00</p>
+        </div>
+        <div class="producto">
+          <img src="img/torta de limon.jpeg" alt="Mousse de Limón">
+          <h3>Mousse de Limón</h3>
+          <p>Ligero mousse de limón con base de galleta.</p>
+          <p>Precio: S/ 30.00</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Pastelería Motta. Todos los derechos reservados.</p>
+    <span>Contacto: info@pasteleriamotta.com | Teléfono: +51 923 456 789</span>
+  </footer>
+</body>
+</html>
